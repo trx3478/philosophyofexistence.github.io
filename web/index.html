@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANIFESTO — PHILOSOPHY OF EXISTENCE</title>
+  
+<meta name="google-site-verification" content="iv1SXy8E6w9y5gwksjN-n4-c4Q6dKJR6NF5eSs46MX0" />
+
+  <!-- SEO & Search Engine Meta Tags -->
+  <meta name="description" content="A philosophical manifesto exploring existence, creation, consciousness, and the nature of reality.">
+  <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" />
+  <meta property="og:title" content="MANIFESTO — PHILOSOPHY OF EXISTENCE">
+  <meta property="og:description" content="To exist is to be between two voids...">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Supabase JS Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <style>
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.6);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #f59e0b;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d97706;
+    }
+
+    body {
+      background: radial-gradient(circle at center, #1e1b4b 0%, #0f172a 60%, #020617 100%);
+      color: #f8fafc;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    .lang-select {
+      background-color: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      padding-right: 28px;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 6px center;
+    }
+
+    .lang-select option {
+      background-color: #0f172a;
+      color: #ffffff;
+    }
+    
+    /* İçi boş olan alt-metin div'lerinin yer kaplamaması için */
+    .sub-text:empty {
+      display: none;
+    }
+  </style>
+</head>
+<body class="h-screen overflow-hidden flex flex-col justify-between p-3 md:p-6 text-sm">
+
+  <header class="flex justify-between items-center pb-3 border-b border-slate-800/80">
+    <div class="flex items-center gap-2">
+      <span class="font-black text-amber-500 tracking-wider text-base">MINDFORUM</span>
+    </div>
+    
+    <div class="flex items-center gap-3">
+      <span class="hidden sm:inline-block px-3 py-1 text-xs bg-amber-500/10 border border-amber-500/30 text-amber-400 rounded-full font-semibold uppercase tracking-wider" data-i18n="badge">
+        PHILOSOPHY OF EXISTENCE
+      </span>
+
+      <div class="lang-wrapper">
+        <select class="lang-select" id="langSelect" onchange="setLanguage(this.value)">
+          <option value="en">🇬🇧 EN</option>
+          <option value="tr">🇹🇷 TR</option>
+          <option value="de">🇩🇪 DE</option>
+          <option value="fr">🇫🇷 FR</option>
+          <option value="es">🇪🇸 ES</option>
+          <option value="ru">🇷🇺 RU</option>
+          <option value="ar">🇸🇦 AR</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="grid grid-cols-1 lg:grid-cols-12 gap-4 my-2 flex-grow overflow-hidden">
+
+    <section class="lg:col-span-7 bg-slate-900/60 border border-slate-800 rounded-xl p-4 flex flex-col justify-between overflow-hidden shadow-2xl backdrop-blur-md">
+      
+      <h1 class="text-lg md:text-xl font-bold text-amber-400 text-center mb-3 italic border-b border-slate-800 pb-2" data-i18n="quote">
+        “To exist is to be between two voids...”
+      </h1>
+
+      <div class="overflow-y-auto pr-2 space-y-2 flex-grow max-h-[calc(100vh-220px)]">
+        
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p1_title">1. THERE IS A CREATOR OF THE UNIVERSE.</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p1_sub">“This tremendous level of order cannot be explained by coincidence.”</div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p2_title">2. THE CREATOR IS ONE.</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p2_sub">“If there were multiple creators, they would not consciously establish a system like 'evil' that damages their own order.”</div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p3_title">3. THE CREATOR CREATES BUT DOES NOT DESTROY.</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p3_sub">“Because, as the name implies, they are the 'creator'; destroying is not their attribute.”</div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p4_title">4. TIME DOES NOT ACTUALLY EXIST.</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p4_sub">“The beginning and the end occurred simultaneously; we are merely experiencing the sub-fractions of time.”</div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p5_title">5. HUMAN CONSCIOUSNESS IS LIMITED.</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p5_sub">“The Creator did not give the knowledge completely; although questioning is left free, access is restricted.”</div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p6_title">6. EVOLUTION ALONE CANNOT EXPLAIN EVERYTHING.</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p6_sub">“There is no feedback mechanism that retroactively corrects the output generated during the process.”</div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p7_title">7. EXISTENCE HAS A PURPOSE.</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p7_sub">“Every event in the universe produces energy, creates action-reaction, and this cycle points to an ultimate outcome.”</div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p8_title">8. IF THERE IS AN OUTCOME, THERE MUST BE AN EVALUATION.</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p8_sub">“If the Creator is watching, they must react at some point; this gives rise to the idea of a cosmic 'reckoning'.”</div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p9_title">9. IF THE CREATOR KNOWS THE OUTCOME, WHY IS THERE A PROCESS?</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p9_sub">“The process is a mandatory stage for consciousness; however, the reason for this necessity remains unsolved.”</div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p10_title">10. GOOD AND EVIL HAVE BEEN CONSCIOUSLY INCLUDED IN THE SYSTEM.</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p10_sub"></div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p11_title">11. HUMANS CANNOT BE HELD FULLY RESPONSIBLE FOR ANYTHING.</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p11_sub">“It is the Creator who creates the conditions, limits, and possibilities.”</div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p12_title">12. JUST AS THE RIGHT TO HOLD ACCOUNTABLE BELONGS TO THE CREATOR, HUMANS ALSO HAVE THE RIGHT TO HOLD THE CREATOR ACCOUNTABLE.</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p12_sub"></div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p13_title">13. THE "OBLIGATION TO CREATE AND NOT DESTROY" IS DIRECTED TOWARDS A GREATER WHOLE.</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p13_sub">“There may be other wholes within this greater whole; but there is no conflict among them. This strengthens the idea of a single creator.”</div>
+        </div>
+
+        <div class="p-2 bg-slate-800/40 rounded border border-slate-800">
+          <div class="font-bold text-slate-100" data-i18n="p14_title">14. THE FINAL QUESTION REMAINS VALID: WHY DOES THE CREATOR CREATE?</div>
+          <div class="text-xs text-amber-300/80 italic mt-0.5 sub-text" data-i18n="p14_sub">“No model can fully explain this question.”</div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="lg:col-span-5 flex flex-col justify-between gap-3 overflow-hidden">
+      
+      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-3 flex flex-col justify-between h-1/2 backdrop-blur-md">
+        <div class="flex justify-between items-center mb-2 pb-1 border-b border-slate-800">
+          <span class="font-bold text-amber-400 flex items-center gap-1.5" data-i18n="public_comments">
+            💬 Public Comments
+          </span>
+          <span class="text-xs text-slate-400" id="commentCount">Total: 0</span>
+        </div>
+
+        <div id="commentsList" class="overflow-y-auto space-y-2 mb-2 pr-1 text-xs flex-grow max-h-[140px]">
+          <div class="text-slate-500 italic text-center py-2" data-i18n="loading_comments">Loading comments...</div>
+        </div>
+
+        <form id="commentForm" onsubmit="handlePostComment(event)" class="space-y-1.5">
+          <input type="text" id="commentAuthor" required data-i18n-placeholder="ph_name" placeholder="Your Name" class="w-full bg-slate-950/80 border border-slate-800 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-amber-500">
+          <textarea id="commentText" required rows="2" data-i18n-placeholder="ph_comment" placeholder="Share your thoughts with everyone..." class="w-full bg-slate-950/80 border border-slate-800 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-amber-500 resize-none"></textarea>
+          <button type="submit" data-i18n="btn_post" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-1 rounded transition text-xs">
+            Post Comment
+          </button>
+        </form>
+      </div>
+
+      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-3 flex flex-col justify-between h-1/2 backdrop-blur-md">
+        <div class="mb-2 pb-1 border-b border-slate-800 font-bold text-slate-200 flex items-center gap-1.5" data-i18n="send_pm">
+          ✉️ Send Private Message
+        </div>
+
+        <form action="https://formsubmit.co/tayfunaydin78@gmail.com" method="POST" class="space-y-1.5 flex-grow flex flex-col justify-between">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="grid grid-cols-2 gap-1.5">
+            <input type="text" name="name" required data-i18n-placeholder="ph_name" placeholder="Name" class="bg-slate-950/80 border border-slate-800 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-amber-500">
+            <input type="email" name="email" required data-i18n-placeholder="ph_email" placeholder="Email" class="bg-slate-950/80 border border-slate-800 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-amber-500">
+          </div>
+          <input type="text" name="_subject" required data-i18n-placeholder="ph_subject" placeholder="Subject" class="w-full bg-slate-950/80 border border-slate-800 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-amber-500">
+          <textarea name="message" required rows="2" data-i18n-placeholder="ph_pm" placeholder="Private message for the author..." class="w-full bg-slate-950/80 border border-slate-800 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-amber-500 resize-none"></textarea>
+          
+          <button type="submit" data-i18n="btn_send_email" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold py-1 rounded transition text-xs">
+            Send Message to My Email
+          </button>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="text-center text-[10px] text-slate-500 pt-2 border-t border-slate-800/80">
+    © 2026 MINDFORUM — PHILOSOPHY OF EXISTENCE. ALL RIGHTS RESERVED.
+  </footer>
+
+  <script>
+    const SUPABASE_URL = 'YOUR_SUPABASE_URL';
+    const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+    let supabaseClient = null;
+
+    if (SUPABASE_URL !== 'YOUR_SUPABASE_URL') {
+      supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    }
+
+    const translations = {
+      tr: {
+        badge: 'VAROLUŞ FELSEFESİ',
+        quote: '“Var olmak, iki yokluk arasındadır...”',
+        p1_title: '1. Evrenin bir yaratıcısı vardır.',
+        p1_sub: '“Müthiş seviyedeki bu düzen, rastlantıyla açıklanamaz.”',
+        p2_title: '2. Yaratıcı tektir.',
+        p2_sub: '“Birden fazla yaratıcı olsaydı, kendi düzenine zarar veren “kötülük” gibi bir sistemi bilinçli şekilde kurmazdı.”',
+        p3_title: '3. Yaratıcı yaratır ama yok etmez.',
+        p3_sub: '“Çünkü adı üstünde “yaratıcıdır”; yok etmek onun niteliği değildir.”',
+        p4_title: '4. Zaman aslında yoktur.',
+        p4_sub: '“Başlangıç ve son aynı anda gerçekleşmiştir; biz sadece zamanın alt kırılımlarını deneyimliyoruz.”',
+        p5_title: '5. İnsan bilinci sınırlandırılmıştır.',
+        p5_sub: '“Yaratıcı, bilgiyi tamamen vermemiş; sorgulamayı serbest bırakmasına rağmen erişimi kısıtlamıştır.”',
+        p6_title: '6. Evrim tek başına her şeyi açıklayamaz.',
+        p6_sub: '“Süreç içinde oluşan çıktıyı geriye dönük düzelten bir geri bildirim mekanizması yoktur.”',
+        p7_title: '7. Var oluşun bir amacı vardır.',
+        p7_sub: '“Evrendeki her olay enerji üretir, etki-tepki yaratır ve bu döngü nihai bir sonuca işaret eder.”',
+        p8_title: '8. Sonuç varsa değerlendirme de olmalıdır.',
+        p8_sub: '“Yaratıcı izliyorsa bir noktada tepki vermesi gerekir; bu durum kozmik bir “hesaplaşma” fikrini doğurur.”',
+        p9_title: '9. Yaratıcı sonucu biliyorsa süreç neden var?',
+        p9_sub: '“Süreç, bilinç için zorunlu bir aşamadır; ancak bu zorunluluğun nedeni hâlâ çözülememiştir.”',
+        p10_title: '10. İyilik ve kötülük bilinçli şekilde sisteme dahil edilmiştir.',
+        p10_sub: '',
+        p11_title: '11. İnsan hiçbir şey için tam olarak sorumlu tutulamaz.',
+        p11_sub: '“Koşulları, sınırları ve imkânları yaratan yaratıcıdır.”',
+        p12_title: '12. Hesap sorma hakkı yaratıcıya ait olduğu kadar, insanın da yaratıcıya hesap sorma hakkı vardır.',
+        p12_sub: '',
+        p13_title: '13. “Var etme – yok etmeme zorunluluğu” daha büyük bir bütünlüğe yöneliktir.',
+        p13_sub: '“Bu büyük bütün içinde başka bütünler olabilir; ancak aralarında çatışma yoktur. Bu da tek yaratıcı fikrini güçlendirir.”',
+        p14_title: '14. Son soru hâlâ geçerlidir: Yaratıcı neden var ediyor?',
+        p14_sub: '“Hiçbir model bu soruyu tam olarak açıklayamaz.”',
+        public_comments: '💬 Açık Yorumlar',
+        loading_comments: 'Yorumlar yükleniyor...',
+        send_pm: '✉️ Özel Mesaj Gönder',
+        btn_post: 'Yorum Gönder',
+        btn_send_email: 'E-postama Mesaj Gönder',
+        ph_name: 'Adınız',
+        ph_comment: 'Düşüncelerinizi herkesle paylaşın...',
+        ph_email: 'E-posta',
+        ph_subject: 'Konu',
+        ph_pm: 'Yazar için özel mesaj...'
+      },
+      en: {
+        badge: 'PHILOSOPHY OF EXISTENCE',
+        quote: '“To exist is to be between two voids...”',
+        p1_title: '1. THERE IS A CREATOR OF THE UNIVERSE.',
+        p1_sub: '“This tremendous level of order cannot be explained by coincidence.”',
+        p2_title: '2. THE CREATOR IS ONE.',
+        p2_sub: '“If there were multiple creators, they would not consciously establish a system like \'evil\' that damages their own order.”',
+        p3_title: '3. THE CREATOR CREATES BUT DOES NOT DESTROY.',
+        p3_sub: '“Because, as the name implies, they are the \'creator\'; destroying is not their attribute.”',
+        p4_title: '4. TIME DOES NOT ACTUALLY EXIST.',
+        p4_sub: '“The beginning and the end occurred simultaneously; we are merely experiencing the sub-fractions of time.”',
+        p5_title: '5. HUMAN CONSCIOUSNESS IS LIMITED.',
+        p5_sub: '“The Creator did not give the knowledge completely; although questioning is left free, access is restricted.”',
+        p6_title: '6. EVOLUTION ALONE CANNOT EXPLAIN EVERYTHING.',
+        p6_sub: '“There is no feedback mechanism that retroactively corrects the output generated during the process.”',
+        p7_title: '7. EXISTENCE HAS A PURPOSE.',
+        p7_sub: '“Every event in the universe produces energy, creates action-reaction, and this cycle points to an ultimate outcome.”',
+        p8_title: '8. IF THERE IS AN OUTCOME, THERE MUST BE AN EVALUATION.',
+        p8_sub: '“If the Creator is watching, they must react at some point; this gives rise to the idea of a cosmic \'reckoning\'.”',
+        p9_title: '9. IF THE CREATOR KNOWS THE OUTCOME, WHY IS THERE A PROCESS?',
+        p9_sub: '“The process is a mandatory stage for consciousness; however, the reason for this necessity remains unsolved.”',
+        p10_title: '10. GOOD AND EVIL HAVE BEEN CONSCIOUSLY INCLUDED IN THE SYSTEM.',
+        p10_sub: '',
+        p11_title: '11. HUMANS CANNOT BE HELD FULLY RESPONSIBLE FOR ANYTHING.',
+        p11_sub: '“It is the Creator who creates the conditions, limits, and possibilities.”',
+        p12_title: '12. JUST AS THE RIGHT TO HOLD ACCOUNTABLE BELONGS TO THE CREATOR, HUMANS ALSO HAVE THE RIGHT TO HOLD THE CREATOR ACCOUNTABLE.',
+        p12_sub: '',
+        p13_title: '13. THE "OBLIGATION TO CREATE AND NOT DESTROY" IS DIRECTED TOWARDS A GREATER WHOLE.',
+        p13_sub: '“There may be other wholes within this greater whole; but there is no conflict among them. This strengthens the idea of a single creator.”',
+        p14_title: '14. THE FINAL QUESTION REMAINS VALID: WHY DOES THE CREATOR CREATE?',
+        p14_sub: '“No model can fully explain this question.”',
+        public_comments: '💬 Public Comments',
+        loading_comments: 'Loading comments...',
+        send_pm: '✉️ Send Private Message',
+        btn_post: 'Post Comment',
+        btn_send_email: 'Send Message to My Email',
+        ph_name: 'Your Name',
+        ph_comment: 'Share your thoughts with everyone...',
+        ph_email: 'Email',
+        ph_subject: 'Subject',
+        ph_pm: 'Private message for the author...'
+      },
+      de: {
+        badge: 'PHILOSOPHIE DER EXISTENZ',
+        quote: '„Zu existieren bedeutet, zwischen zwei Nichtigkeiten zu sein...“',
+        p1_title: '1. ES GIBT EINEN SCHÖPFER DES UNIVERSUMS.',
+        p1_sub: '„Diese enorme Ordnung lässt sich nicht mit Zufall erklären.“',
+        p2_title: '2. DER SCHÖPFER IST EINZIG.',
+        p2_sub: '„Gäbe es mehrere Schöpfer, würden sie nicht bewusst ein System wie das \'Böse\' etablieren, das ihrer eigenen Ordnung schadet.“',
+        p3_title: '3. DER SCHÖPFER ERSCHAFFT, ABER ZERSTÖRT NICHT.',
+        p3_sub: '„Denn wie der Name schon sagt, ist er der \'Schöpfer\'; Zerstören ist nicht seine Eigenschaft.“',
+        p4_title: '4. ZEIT EXISTIERT EIGENTLICH NICHT.',
+        p4_sub: '„Anfang und Ende fanden gleichzeitig statt; wir erleben lediglich die Unterbrechungen der Zeit.“',
+        p5_title: '5. DAS MENSCHLICHE BEWUSSTSEIN IST BEGRENZT.',
+        p5_sub: '„Der Schöpfer hat das Wissen nicht vollständig gegeben; obwohl das Hinterfragen freigestellt ist, wurde der Zugang eingeschränkt.“',
+        p6_title: '6. DIE EVOLUTION ALLEIN KANN NICHT ALLES ERKLÄREN.',
+        p6_sub: '„Es gibt keinen Rückkopplungsmechanismus, der die im Prozess entstehenden Ergebnisse nachträglich korrigiert.“',
+        p7_title: '7. DIE EXISTENZ HAT EINEN ZWECK.',
+        p7_sub: '„Jedes Ereignis im Universum erzeugt Energie, schafft Aktion-Reaktion, und dieser Zyklus weist auf ein endgültiges Ergebnis hin.“',
+        p8_title: '8. WENN ES EIN ERGEBNIS GIBT, MUSS ES EINE BEWERTUNG GEBEN.',
+        p8_sub: '„Wenn der Schöpfer zuschaut, muss er an einem Punkt reagieren; dies bringt die Idee einer kosmischen \'Abrechnung\' hervor.“',
+        p9_title: '9. WENN DER SCHÖPFER DAS ERGEBNIS KENNT, WARUM GIBT ES EINEN PROZESS?',
+        p9_sub: '„Der Prozess ist eine zwingende Phase für das Bewusstsein; jedoch bleibt der Grund für diese Notwendigkeit ungelöst.“',
+        p10_title: '10. GUT UND BÖSE WURDEN BEWUSST IN DAS SYSTEM INTEGRIERT.',
+        p10_sub: '',
+        p11_title: '11. DER MENSCH KANN FÜR NICHTS VOLLSTÄNDIG VERANTWORTLICH GEMACHT WERDEN.',
+        p11_sub: '„Es ist der Schöpfer, der die Bedingungen, Grenzen und Möglichkeiten erschafft.“',
+        p12_title: '12. SO WIE DAS RECHT ZUR RECHENSCHAFTSFORDERUNG DEM SCHÖPFER GEHÖRT, HAT AUCH DER MENSCH DAS RECHT, VOM SCHÖPFER RECHENSCHAFT ZU FORDERN.',
+        p12_sub: '',
+        p13_title: '13. DIE "VERPFLICHTUNG ZU ERSCHAFFEN UND NICHT ZU ZERSTÖREN" RICHTET SICH AUF EIN GRÖßERES GANZES.',
+        p13_sub: '„Es mag andere Ganze innerhalb dieses größeren Ganzen geben; aber es gibt keinen Konflikt zwischen ihnen. Dies stärkt die Idee eines einzigen Schöpfers.“',
+        p14_title: '14. DIE LETZTE FRAGE BLEIBT GÜLTIG: WARUM ERSCHAFFT DER SCHÖPFER?',
+        p14_sub: '„Kein Modell kann diese Frage vollständig erklären.“',
+        public_comments: '💬 Öffentliche Kommentare',
+        loading_comments: 'Kommentare werden geladen...',
+        send_pm: '✉️ Private Nachricht senden',
+        btn_post: 'Kommentar veröffentlichen',
+        btn_send_email: 'Nachricht an meine E-Mail senden',
+        ph_name: 'Ihr Name',
+        ph_comment: 'Teilen Sie Ihre Gedanken mit allen...',
+        ph_email: 'E-Mail',
+        ph_subject: 'Betreff',
+        ph_pm: 'Private Nachricht an den Autor...'
+      },
+      fr: {
+        badge: 'PHILOSOPHIE DE L\'EXISTENCE',
+        quote: '« Exister, c\'est être entre deux vides... »',
+        p1_title: '1. IL Y A UN CRÉATEUR DE L\'UNIVERS.',
+        p1_sub: '« Cet ordre d\'un niveau formidable ne peut être expliqué par le hasard. »',
+        p2_title: '2. LE CRÉATEUR EST UNIQUE.',
+        p2_sub: '« S\'il y avait plusieurs créateurs, ils n\'établiraient pas consciemment un système comme le \'mal\' qui nuit à leur propre ordre. »',
+        p3_title: '3. LE CRÉATEUR CRÉE MAIS NE DÉTRUIT PAS.',
+        p3_sub: '« Car comme son nom l\'indique, il est le \'créateur\' ; détruire n\'est pas son attribut. »',
+        p4_title: '4. LE TEMPS N\'EXISTE PAS RÉELLEMENT.',
+        p4_sub: '« Le début et la fin se sont produits simultanément ; nous ne faisons qu\'expérimenter les sous-fractions du temps. »',
+        p5_title: '5. LA CONSCIENCE HUMAINE EST LIMITÉE.',
+        p5_sub: '« Le Créateur n\'a pas donné la connaissance entièrement ; bien que le questionnement soit libre, l\'accès est restreint. »',
+        p6_title: '6. L\'ÉVOLUTION SEULE NE PEUT PAS TOUT EXPLIQUER.',
+        p6_sub: '« Il n\'y a pas de mécanisme de rétroaction qui corrige rétroactivement le résultat généré au cours du processus. »',
+        p7_title: '7. L\'EXISTENCE A UN BUT.',
+        p7_sub: '« Chaque événement dans l\'univers produit de l\'énergie, crée une action-réaction, et ce cycle pointe vers un résultat ultime. »',
+        p8_title: '8. S\'IL Y A UN RÉSULTAT, IL DOIT Y AVOIR UNE ÉVALUATION.',
+        p8_sub: '« Si le Créateur regarde, il doit réagir à un moment donné ; cela donne naissance à l\'idée d\'un \'règlement de comptes\' cosmique. »',
+        p9_title: '9. SI LE CRÉATEUR CONNAÎT LE RÉSULTAT, POURQUOI Y A-T-IL UN PROCESSUS ?',
+        p9_sub: '« Le processus est une étape obligatoire pour la conscience ; cependant, la raison de cette nécessité reste non résolue. »',
+        p10_title: '10. LE BIEN ET LE MAL ONT ÉTÉ CONSCIEMMENT INCLUS DANS LE SYSTÈME.',
+        p10_sub: '',
+        p11_title: '11. L\'HUMAIN NE PEUT ÊTRE TENU ENTIÈREMENT RESPONSABLE DE RIEN.',
+        p11_sub: '« C\'est le Créateur qui crée les conditions, les limites et les possibilités. »',
+        p12_title: '12. TOUT COMME LE DROIT DE DEMANDER DES COMPTES APPARTIENT AU CRÉATEUR, L\'HUMAIN A AUSSI LE DROIT DE DEMANDER DES COMPTES AU CRÉATEUR.',
+        p12_sub: '',
+        p13_title: '13. L\'"OBLIGATION DE CRÉER ET DE NE PAS DÉTRUIRE" EST DIRIGÉE VERS UN TOUT PLUS GRAND.',
+        p13_sub: '« Il peut y avoir d\'autres touts au sein de ce grand tout ; mais il n\'y a pas de conflit entre eux. Cela renforce l\'idée d\'un créateur unique. »',
+        p14_title: '14. LA QUESTION FINALE RESTE VALABLE : POURQUOI LE CRÉATEUR CRÉE-T-IL ?',
+        p14_sub: '« Aucun modèle ne peut expliquer pleinement cette question. »',
+        public_comments: '💬 Commentaires publics',
+        loading_comments: 'Chargement des commentaires...',
+        send_pm: '✉️ Envoyer un message privé',
+        btn_post: 'Publier le commentaire',
+        btn_send_email: 'Envoyer le message sur mon e-mail',
+        ph_name: 'Votre nom',
+        ph_comment: 'Partagez vos pensées avec tout le monde...',
+        ph_email: 'E-mail',
+        ph_subject: 'Sujet',
+        ph_pm: 'Message privé pour l\'auteur...'
+      },
+      es: {
+        badge: 'FILOSOFÍA DE LA EXISTENCIA',
+        quote: '“Existir es estar entre dos vacíos...”',
+        p1_title: '1. HAY UN CREADOR DEL UNIVERSO.',
+        p1_sub: '“Este tremendo nivel de orden no se puede explicar por casualidad.”',
+        p2_title: '2. EL CREADOR ES ÚNICO.',
+        p2_sub: '“Si hubiera múltiples creadores, no establecerían conscientemente un sistema como el \'mal\' que daña su propio orden.”',
+        p3_title: '3. EL CREADOR CREA PERO NO DESTRUYE.',
+        p3_sub: '“Porque, como su nombre indica, es el \'creador\'; destruir no es su atributo.”',
+        p4_title: '4. EL TIEMPO EN REALIDAD NO EXISTE.',
+        p4_sub: '“El principio y el fin ocurrieron simultáneamente; solo estamos experimentando las subfracciones del tiempo.”',
+        p5_title: '5. LA CONCIENCIA HUMANA ESTÁ LIMITADA.',
+        p5_sub: '“El Creador no dio el conocimiento completamente; aunque el cuestionamiento es libre, el acceso está restringido.”',
+        p6_title: '6. LA EVOLUCIÓN POR SÍ SOLA NO PUEDE EXPLICARLO TODO.',
+        p6_sub: '“No hay un mecanismo de retroalimentación que corrija retroactivamente el resultado generado durante el proceso.”',
+        p7_title: '7. LA EXISTENCIA TIENE UN PROPÓSITO.',
+        p7_sub: '“Cada evento en el universo produce energía, crea acción-reacción, y este ciclo apunta a un resultado final.”',
+        p8_title: '8. SI HAY UN RESULTADO, DEBE HABER UNA EVALUACIÓN.',
+        p8_sub: '“Si el Creador está observando, debe reaccionar en algún momento; esto da lugar a la idea de un \'ajuste de cuentas\' cósmico.”',
+        p9_title: '9. SI EL CREADOR CONOCE EL RESULTADO, ¿POR QUÉ HAY UN PROCESO?',
+        p9_sub: '“El proceso es una etapa obligatoria para la conciencia; sin embargo, la razón de esta necesidad sigue sin resolverse.”',
+        p10_title: '10. EL BIEN Y EL MAL HAN SIDO INCLUIDOS CONSCIENTEMENTE EN EL SISTEMA.',
+        p10_sub: '',
+        p11_title: '11. EL SER HUMANO NO PUEDE SER HECHO TOTALMENTE RESPONSABLE DE NADA.',
+        p11_sub: '“Es el Creador quien crea las condiciones, los límites y las posibilidades.”',
+        p12_title: '12. ASÍ COMO EL DERECHO A PEDIR CUENTAS PERTENECE AL CREADOR, EL HUMANO TAMBIÉN TIENE EL DERECHO A PEDIR CUENTAS AL CREADOR.',
+        p12_sub: '',
+        p13_title: '13. LA "OBLIGACIÓN DE CREAR Y NO DESTRUIR" SE DIRIGE HACIA UN TODO MAYOR.',
+        p13_sub: '“Puede haber otros todos dentro de este gran todo; pero no hay conflicto entre ellos. Esto fortalece la idea de un creador único.”',
+        p14_title: '14. LA PREGUNTA FINAL SIGUE SIENDO VÁLIDA: ¿POR QUÉ EL CREADOR CREA?',
+        p14_sub: '“Ningún modelo puede explicar completamente esta pregunta.”',
+        public_comments: '💬 Comentarios públicos',
+        loading_comments: 'Cargando comentarios...',
+        send_pm: '✉️ Enviar mensaje privado',
+        btn_post: 'Publicar comentario',
+        btn_send_email: 'Enviar mensaje a mi correo',
+        ph_name: 'Tu nombre',
+        ph_comment: 'Comparte tus pensamientos con todos...',
+        ph_email: 'Correo electrónico',
+        ph_subject: 'Asunto',
+        ph_pm: 'Mensaje privado para el autor...'
+      },
+      ru: {
+        badge: 'ФИЛОСОФИЯ СУЩЕСТВОВАНИЯ',
+        quote: '«Существовать — значит находиться между двумя пустотами...»',
+        p1_title: '1. СУЩЕСТВУЕТ СОЗДАТЕЛЬ ВСЕЛЕННОЙ.',
+        p1_sub: '«Этот потрясающий уровень порядка невозможно объяснить случайностью.»',
+        p2_title: '2. СОЗДАТЕЛЬ ЕДИН.',
+        p2_sub: '«Если бы было несколько создателей, они бы не стали сознательно создавать систему вроде \'зла\', разрушающую их собственный порядок.»',
+        p3_title: '3. СОЗДАТЕЛЬ СОЗИДАЕТ, НО НЕ РАЗРУШАЕТ.',
+        p3_sub: '«Поскольку, как следует из названия, он \'создатель\'; разрушение не является его свойством.»',
+        p4_title: '4. ВРЕМЕНИ НА САМОМ ДЕЛЕ НЕ СУЩЕСТВУЕТ.',
+        p4_sub: '«Начало и конец произошли одновременно; мы лишь переживаем подкатегории времени.»',
+        p5_title: '5. ЧЕЛОВЕЧЕСКОЕ СОЗНАНИЕ ОГРАНИЧЕНО.',
+        p5_sub: '«Создатель не дал знание полностью; хотя сомнения разрешены, доступ ограничен.»',
+        p6_title: '6. ОДНА ЛИШЬ ЭВОЛЮЦИЯ НЕ МОЖЕТ ОБЪЯСНИТЬ ВСЁ.',
+        p6_sub: '«Не существует механизма обратной связи, ретроспективно исправляющего результат, полученный в ходе процесса.»',
+        p7_title: '7. У СУЩЕСТВОВАНИЯ ЕСТЬ ЦЕЛЬ.',
+        p7_sub: '«Каждое событие во вселенной производит энергию, создает действие-противодействие, и этот цикл указывает на конечный результат.»',
+        p8_title: '8. ЕСЛИ ЕСТЬ РЕЗУЛЬТАТ, ТО ДОЛЖНА БЫТЬ И ОЦЕНКА.',
+        p8_sub: '«Если Создатель наблюдает, он должен в какой-то момент отреагировать; это порождает идею космического \'расчета\'.»',
+        p9_title: '9. ЕСЛИ СОЗДАТЕЛЬ ЗНАЕТ РЕЗУЛЬТАТ, ЗАЧЕМ НУЖЕН ПРОЦЕСС?',
+        p9_sub: '«Процесс является обязательным этапом для сознания; однако причина этой необходимости остается неразгаданной.»',
+        p10_title: '10. ДОБРО И ЗЛО БЫЛИ СОЗНАТЕЛЬНО ВКЛЮЧЕНЫ В СИСТЕМУ.',
+        p10_sub: '',
+        p11_title: '11. ЧЕЛОВЕКА НЕЛЬЗЯ ПРИВЛЕЧЬ К ПОЛНОЙ ОТВЕТСТВЕННОСТИ НИ ЗА ЧТО.',
+        p11_sub: '«Именно Создатель создает условия, ограничения и возможности.»',
+        p12_title: '12. ТОЧНО ТАК ЖЕ, КАК ПРАВО ТРЕБОВАТЬ ОТВЕТА ПРИНАДЛЕЖИТ СОЗДАТЕЛЮ, ЧЕЛОВЕК ТАКЖЕ ИМЕЕТ ПРАВО ТРЕБОВАТЬ ОТВЕТА ОТ СОЗДАТЕЛЯ.',
+        p12_sub: '',
+        p13_title: '13. «ОБЯЗАТЕЛЬСТВО СОЗДАВАТЬ И НЕ РАЗРУШАТЬ» НАПРАВЛЕНО НА БОЛЬШЕЕ ЦЕЛОЕ.',
+        p13_sub: '«Внутри этого большего целого могут быть и другие целые; но между ними нет конфликта. Это укрепляет идею единого создателя.»',
+        p14_title: '14. ПОСЛЕДНИЙ ВОПРОС ОСТАЕТСЯ В СИЛЕ: ПОЧЕМУ СОЗДАТЕЛЬ СОЗИДАЕТ?',
+        p14_sub: '«Ни одна модель не может полностью объяснить этот вопрос.»',
+        public_comments: '💬 Публичные комментарии',
+        loading_comments: 'Загрузка комментариев...',
+        send_pm: '✉️ Отправить личное сообщение',
+        btn_post: 'Опубликовать комментарий',
+        btn_send_email: 'Отправить сообщение на мой Email',
+        ph_name: 'Ваше имя',
+        ph_comment: 'Поделитесь своими мыслями со всеми...',
+        ph_email: 'Email',
+        ph_subject: 'Тема',
+        ph_pm: 'Личное сообщение для автора...'
+      },
+      ar: {
+        badge: 'فلسفة الوجود',
+        quote: '«الوجود هو أن تكون بين عدمين...»',
+        p1_title: '1. هناك خالق للكون.',
+        p1_sub: '«هذا النظام الهائل لا يمكن تفسيره بالصدفة.»',
+        p2_title: '2. الخالق واحد.',
+        p2_sub: '«لو كان هناك أكثر من خالق، لما أسسوا بوعي نظامًا مثل \'الشر\' يضر بنظامهم الخاص.»',
+        p3_title: '3. الخالق يخلق ولا يدمر.',
+        p3_sub: '«لأنه كما يوحي اسمه \'خالق\'؛ التدمير ليس من صفاته.»',
+        p4_title: '4. الوقت غير موجود في الواقع.',
+        p4_sub: '«البداية والنهاية حدثتا في نفس الوقت؛ نحن نختبر فقط التفرعات الفرعية للوقت.»',
+        p5_title: '5. الوعي البشري محدود.',
+        p5_sub: '«الخالق لم يعطِ المعرفة كاملة؛ على الرغم من أن التساؤل مسموح به، إلا أن الوصول مقيد.»',
+        p6_title: '6. التطور وحده لا يمكنه تفسير كل شيء.',
+        p6_sub: '«لا توجد آلية تغذية راجعة تصحح بأثر رجعي المخرجات المتولدة خلال العملية.»',
+        p7_title: '7. للوجود هدف.',
+        p7_sub: '«كل حدث في الكون ينتج طاقة، ويخلق فعلاً ورد فعل، وهذه الدورة تشير إلى نتيجة نهائية.»',
+        p8_title: '8. إذا كانت هناك نتيجة، فيجب أن يكون هناك تقييم.',
+        p8_sub: '«إذا كان الخالق يراقب، فيجب أن يتفاعل في نقطة ما؛ هذا يولد فكرة \'الحساب\' الكوني.»',
+        p9_title: '9. إذا كان الخالق يعلم النتيجة، فلماذا توجد العملية؟',
+        p9_sub: '«العملية مرحلة إلزامية للوعي؛ ومع ذلك، لا يزال سبب هذه الضرورة غير محلول.»',
+        p10_title: '10. تم إدراج الخير والشر بوعي في النظام.',
+        p10_sub: '',
+        p11_title: '11. لا يمكن تحميل الإنسان المسؤولية الكاملة عن أي شيء.',
+        p11_sub: '«الخالق هو من يخلق الظروف والحدود والإمكانيات.»',
+        p12_title: '12. تمامًا كما أن حق المحاسبة يعود للخالق، فإن للإنسان أيضًا الحق في محاسبة الخالق.',
+        p12_sub: '',
+        p13_title: '13. "الالتزام بالخلق وعدم التدمير" موجه نحو كلٍ أكبر.',
+        p13_sub: '«قد تكون هناك كليات أخرى داخل هذا الكل الأكبر؛ لكن لا يوجد صراع بينها. هذا يعزز فكرة الخالق الواحد.»',
+        p14_title: '14. السؤال الأخير لا يزال ساريًا: لماذا يخلق الخالق؟',
+        p14_sub: '«لا يمكن لأي نموذج أن يفسر هذا السؤال بالكامل.»',
+        public_comments: '💬 تعليقات عامة',
+        loading_comments: 'جاري تحميل التعليقات...',
+        send_pm: '✉️ إرسال رسالة خاصة',
+        btn_post: 'نشر التعليق',
+        btn_send_email: 'إرسال رسالة إلى بريدي الإلكتروني',
+        ph_name: 'اسمك',
+        ph_comment: 'شارك أفكارك مع الجميع...',
+        ph_email: 'البريد الإلكتروني',
+        ph_subject: 'الموضوع',
+        ph_pm: 'رسالة خاصة للمؤلف...'
+      }
+    };
+
+    function setLanguage(lang) {
+      if (lang === 'ar') {
+        document.documentElement.dir = 'rtl';
+        document.documentElement.lang = 'ar';
+      } else {
+        document.documentElement.dir = 'ltr';
+        document.documentElement.lang = lang;
+      }
+
+      const selectEl = document.getElementById('langSelect');
+      if (selectEl) selectEl.value = lang;
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key] !== undefined) {
+          el.innerText = translations[lang][key];
+        }
+      });
+
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+          el.placeholder = translations[lang][key];
+        }
+      });
+
+      localStorage.setItem('preferred_language', lang);
+    }
+
+    function detectBrowserLanguage() {
+      const userLang = (navigator.language || navigator.userLanguage || '').slice(0, 2).toLowerCase();
+      const supportedLanguages = ['en', 'tr', 'de', 'fr', 'es', 'ru', 'ar'];
+      return supportedLanguages.includes(userLang) ? userLang : 'en';
+    }
+
+    let comments = [];
+
+    async function loadComments() {
+      const commentsList = document.getElementById('commentsList');
+      const commentCount = document.getElementById('commentCount');
+
+      if (supabaseClient) {
+        try {
+          const { data, error } = await supabaseClient.from('comments').select('*').order('created_at', { ascending: false });
+          if (!error && data) {
+            comments = data;
+          }
+        } catch (e) {
+          console.warn('Supabase yüklenemedi, yerel depolama kullanılıyor.');
+        }
+      } else {
+        comments = JSON.parse(localStorage.getItem('local_comments') || '[]');
+      }
+
+      commentCount.innerText = `Total: ${comments.length}`;
+
+      if (comments.length === 0) {
+        commentsList.innerHTML = `<div class="text-slate-500 italic text-center py-2">No comments yet. Be the first!</div>`;
+        return;
+      }
+
+      commentsList.innerHTML = comments.map(c => `
+        <div class="bg-slate-950/60 p-2 rounded border border-slate-800/80">
+          <div class="flex justify-between items-center text-amber-400 font-bold mb-0.5">
+            <span>${escapeHtml(c.author)}</span>
+            <span class="text-[10px] text-slate-500 font-normal">${new Date(c.created_at || Date.now()).toLocaleDateString()}</span>
+          </div>
+          <div class="text-slate-300">${escapeHtml(c.text)}</div>
+        </div>
+      `).join('');
+    }
+
+    async function handlePostComment(event) {
+      event.preventDefault();
+      const authorInput = document.getElementById('commentAuthor');
+      const textInput = document.getElementById('commentText');
+
+      const newComment = {
+        author: authorInput.value.trim(),
+        text: textInput.value.trim(),
+        created_at: new Date().toISOString()
+      };
+
+      if (!newComment.author || !newComment.text) return;
+
+      if (supabaseClient) {
+        await supabaseClient.from('comments').insert([newComment]);
+      } else {
+        comments.unshift(newComment);
+        localStorage.setItem('local_comments', JSON.stringify(comments));
+      }
+
+      authorInput.value = '';
+      textInput.value = '';
+      loadComments();
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('preferred_language');
+      const initialLang = savedLang ? savedLang : detectBrowserLanguage();
+      setLanguage(initialLang);
+      loadComments();
+    });
+  </script>
+</body>
+</html>
