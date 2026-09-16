@@ -641,7 +641,20 @@
       const initialLang = savedLang ? savedLang : detectBrowserLanguage();
       setLanguage(initialLang);
       loadComments();
+      
+    // Ziyaretçi sayacı kodu
+    fetch('https://api.counterapi.dev/v1/philosophyofexistence/visits/up')
+        .then(response => response.json())
+        .then(data => {
+            const counterEl = document.getElementById('visitor-count');
+            if (counterEl) counterEl.innerText = data.count;
+        })
+        .catch(error => {
+            const counterEl = document.getElementById('visitor-count');
+            if (counterEl) counterEl.innerText = "1+";
+        });
     });
   </script>
+  <p>Bu sayfa <span id="visitor-count">...</span> kez ziyaret edildi.</p>
 </body>
 </html>
